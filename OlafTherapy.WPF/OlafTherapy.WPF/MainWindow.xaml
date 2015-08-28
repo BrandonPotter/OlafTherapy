@@ -1,0 +1,29 @@
+﻿<Window x:Class="OlafTherapy.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OlafTherapy.WPF"
+        mc:Ignorable="d"
+        Title="Olaf Therapy" Height="350" Width="525" WindowState="Maximized" Stylus.IsPressAndHoldEnabled="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1527A9" Offset="0"/>
+                <GradientStop Color="#FF848BDA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="235*"/>
+            <ColumnDefinition Width="138*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="olaf" Grid.Column="1" Source="images/OlafTransparent.png"/>
+        <Canvas Name="canvasLeft">
+            <local:PushButton x:Name="pbLeft" Canvas.Left="40" Canvas.Top="87"/>
+        </Canvas>
+        <Canvas Name="canvasRight" Grid.Column="2">
+            <local:PushButton x:Name="pbRight" Canvas.Left="0" Canvas.Top="0"/>
+        </Canvas>
+    </Grid>
+</Window>

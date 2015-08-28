@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="OlafTherapy.WPF.PushButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OlafTherapy.WPF"
+             mc:Ignorable="d" 
+             Height="200" Width="200">
+    
+    <Grid>
+        <Ellipse x:Name="thumbCircle" Fill="#FFEDF44A"></Ellipse>
+    </Grid>
+</UserControl>
